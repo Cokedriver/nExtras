@@ -3,9 +3,6 @@ nExtras = {
 		enable = true,			-- enables Auto Disenchant module.
 		disenchant = true,		-- if true Auto Disenchant on Green any level. If false Auto Disenchant on Green at MAX LEVEL.
 	},
-	macros = {					-- allows macros up to 1023.
-		enable = false,			-- enables macro module.
-	},
 	merchant = {
 		enable = true,			-- enable merchant module.
 		sellMisc = true, 		-- allows the user to add spacific items to sell at merchant (please see the local filter in merchant.lua)
