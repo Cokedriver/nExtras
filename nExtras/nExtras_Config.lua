@@ -1,6 +1,6 @@
 nExtras = {
 	autogreed = {
-		enable = true,			-- Enables Auto Disenchant module.
+		enable = true,			-- enables Auto Disenchant module.
 		disenchant = true,		-- if true Auto Disenchant on Green any level. If false Auto Disenchant on Green at MAX LEVEL.
 	},
 	macros = {					-- allows macros up to 1023.
@@ -12,12 +12,12 @@ nExtras = {
 		autoSellGrey = true,	-- autosell grey items at merchant.
 		autoRepair = true,		-- autorepair at merchant.
 	},
-	hyperlink = {				-- adds a mouseover to linked items in chat.
-		enable = true,
+	hyperlink = {				
+		enable = true,			-- enable mouseover to linked items in chat.
 	},
 	quest = {
 		enable = true,			-- enable quest module.
-		autocomplete = true,	-- Enable the autoaccept quest and autocomplete quest if no reward.
+		autocomplete = true,	-- enable the autoaccept quest and autocomplete quest if no reward.
 	},
 	selfbuffs = {
 		enable = true,			-- enable selbuffs module.
