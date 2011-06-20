@@ -1,0 +1,9 @@
+## Interface: 40100
+## Title: |cffCC3333 n|rExtras
+## Author: Cokedriver
+## Version: 1.0.3
+## Notes: Special Thanks to Tukz from www.tukui.org without his UI this addon would not exist.
+## SavedVariables: nExtras
+## SavedVariablesPerCharacter: nExtrasPerCharacter
+
+nExtras.xml
