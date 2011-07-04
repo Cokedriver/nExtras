@@ -1,7 +1,9 @@
 <Ui xmlns="http://www.blizzard.com/wow/ui/">
 	<Script file="nExtras_Config.lua"/>
-	<Script file="modules\autogreed.lua"/>	
-	<Script file="modules\merchant.lua"/>	
+	<Script file="modules\autogreed.lua"/>
+	<Script file="modules\chat.lua"/>
+	<Script file="modules\merchant.lua"/>
+	<Script file="modules\macro.lua"/>
 	<Script file="modules\selfbuffs.lua"/>
 	<Script file="modules\hyperlink.lua"/>
 	<Script file="modules\quest.lua"/>		

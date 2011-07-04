@@ -102,7 +102,7 @@ if (buffs and buffs[1]) then
 				end
 			end
 			self:Show()
-			if nExtras.remindbuffs.sound == true and sound == true then
+			if nExtras.selfbuffs.sound == true and sound == true then
 				PlaySoundFile("Interface\\AddOns\\nExtras\\Sounds\\Warning.mp3")
 				sound = false
 			end
@@ -115,7 +115,8 @@ if (buffs and buffs[1]) then
 	local frame = CreateFrame('Frame', nil, UIParent)
     frame:SetPoint('CENTER', UIParent, 0, 150)
     frame:SetSize(50, 50)
-    CreateBorder(frame, 12, 5, 5, 5, 1, 1, 1, 1, 1, 1, 1, 1)
+	frame:CreateBeautyBorder(12)
+	frame:SetBeautyBorderPadding( 1, 1, 1, 1, 1, 1, 1, 1)
 	frame:Hide()
 	
 	frame.icon = frame:CreateTexture(nil, 'BACKGROUND')
@@ -210,7 +211,8 @@ if (enchants and enchants[1]) then
 	local frame = CreateFrame('Frame', nil, UIParent)
     frame:SetPoint('CENTER', UIParent, 0, 150)
     frame:SetSize(50, 50)
-    CreateBorder(frame, 12, 5, 5, 5, 1, 1, 1, 1, 1, 1, 1, 1)
+	frame:CreateBeautyBorder(12)
+	frame:SetBeautyBorderPadding(1, 1, 1, 1, 1, 1, 1, 1)
 	frame:Hide()
 	
 	frame.icon = frame:CreateTexture(nil, 'BACKGROUND')

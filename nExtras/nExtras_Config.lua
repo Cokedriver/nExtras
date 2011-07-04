@@ -3,6 +3,12 @@ nExtras = {
 		enable = true,			-- enables Auto Disenchant module.
 		disenchant = true,		-- if true Auto Disenchant on Green any level. If false Auto Disenchant on Green at MAX LEVEL.
 	},
+	chat = {
+		enable = true,			-- enables !Beautycase border for chat
+	},
+	macro = {
+		enable = true,
+	},
 	merchant = {
 		enable = true,			-- enable merchant module.
 		sellMisc = true, 		-- allows the user to add spacific items to sell at merchant (please see the local filter in merchant.lua)
