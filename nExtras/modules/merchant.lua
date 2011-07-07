@@ -44,19 +44,30 @@ f:SetScript("OnEvent", function()
 		end
 	end
 	if not IsShiftKeyDown() then
-		if CanMerchantRepair() and nExtras.merchant.autoRepair then
-			local cost, possible = GetRepairAllCost()
-			if cost>0 then
-				if possible then
-					RepairAllItems()
-					local c = cost%100
-					local s = math.floor((cost%10000)/100)
-					local g = math.floor(cost/10000)
-					DEFAULT_CHAT_FRAME:AddMessage("Your items have been repaired for".." |cffffffff"..g.."|cffffd700g|r".." |cffffffff"..s.."|cffc7c7cfs|r".." |cffffffff"..c.."|cffeda55fc|r"..".",255,255,0)
+		if CanMerchantRepair() and nExtras.merchant.autoRepair then	
+            guildRepairFlag = 0
+            local cost, possible = GetRepairAllCost()
+            -- additional checks for guild repairs
+            if (IsInGuild()) and (CanGuildBankRepair()) then
+                 if cost <= GetGuildBankWithdrawMoney() then
+                    guildRepairFlag = 1
+                 end
+            end
+            if cost>0 then
+                if (possible or guildRepairFlag) then
+                    RepairAllItems(guildRepairFlag)
+                    local c = cost%100
+                    local s = math.floor((cost%10000)/100)
+                    local g = math.floor(cost/10000)
+					if guildRepairFlag == 1 then
+						DEFAULT_CHAT_FRAME:AddMessage("Your guild payed ".." |cffffffff"..g.."|cffffd700g|r".." |cffffffff"..s.."|cffc7c7cfs|r".." |cffffffff"..c.."|cffeda55fc|r".." to repair your items.",255,255,0)
+					else
+						DEFAULT_CHAT_FRAME:AddMessage("You payed ".." |cffffffff"..g.."|cffffd700g|r".." |cffffffff"..s.."|cffc7c7cfs|r".." |cffffffff"..c.."|cffeda55fc|r".." to repair your items.",255,255,0)
+					end	
 				else
 					DEFAULT_CHAT_FRAME:AddMessage("You don't have enough money for repair!",255,0,0)
-				end
-			end
+                end
+            end		
 		end
 	end
 end)
