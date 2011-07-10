@@ -7,7 +7,7 @@ nExtras = {
 		enable = true,			-- enables !Beautycase border for chat
 	},
 	macro = {
-		enable = true,
+		enable = true,			-- enable bigger macros.
 	},
 	merchant = {
 		enable = true,			-- enable merchant module.
