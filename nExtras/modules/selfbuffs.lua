@@ -198,7 +198,7 @@ if (enchants and enchants[1]) then
 				end
 			end
 			self:Show()
-			if nExtras.remindbuffs.sound == true and sound == true then
+			if nExtras.selfbuffs.sound == true and sound == true then
 				PlaySoundFile("Interface\\AddOns\\nExtras\\Sounds\\Warning.mp3")
 				sound = false
 			end
