@@ -1,9 +1,13 @@
-## Interface: 40200
+## Interface: 50400
 ## Title: |cffCC3333 n|rExtras
 ## Author: Cokedriver
-## Version: 2.1
-## Notes: Special Thanks to Tukz from www.tukui.org without his UI this addon would not exist.
-## SavedVariables: nExtras
-## SavedVariablesPerCharacter: nExtrasPerCharacter
+## Version: 5.4.1
+## Notes: Special Thanks to all the addon creators without them i would not of been able to put these addons together so i can use them.
+## SavedVariables: nEDB
+## SavedVariablesPerCharacter: nEDBPerCharacter
+## OptionalDeps: nCore, Blizzard_TradeSkillUI
 
-nExtras.xml
+Libs\Libs.xml
+
+nExtras.lua
+
