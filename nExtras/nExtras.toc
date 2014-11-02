@@ -1,8 +1,7 @@
-## Interface: 50400
+## Interface: 60000
 ## Title: |cffCC3333 n|rExtras
 ## Author: Cokedriver
-## Version: 5.4.1
-## Notes: Special Thanks to all the addon creators without them i would not of been able to put these addons together so i can use them.
+## Version: 5.4.5
 ## SavedVariables: nEDB
 ## SavedVariablesPerCharacter: nEDBPerCharacter
 ## OptionalDeps: nCore, Blizzard_TradeSkillUI
